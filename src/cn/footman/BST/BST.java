@@ -240,15 +240,18 @@ public class BST<E extends Comparable<E>> {
         Stack<Node> stack = new Stack<>();
 
         while (root != null || !stack.isEmpty()){
-            stack.push(root);
-            root = root.left;
+            if(root != null){
+                stack.push(root);
+                root = root.left;
+            }else {
+                root = stack.pop();
+                System.out.println(root.e);
+                root = root.right;
+            }
+
         }
 
-        if(!stack.isEmpty()){
-            root = stack.pop();
-            System.out.println(root.e);
-            root = root.right;
-        }
+
 
     }
 

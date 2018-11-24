@@ -12,7 +12,7 @@ public class BSTTest {
             bst.add(nums[i]);
         }
 
-        bst.levelOrder();
+//        bst.levelOrder();
 
 //        bst.preOrder();
 //        System.out.println();
@@ -28,7 +28,8 @@ public class BSTTest {
 //
 //
 //        bst.inOrder();
-//        System.out.println();
+        bst.inOrderNR();
+        System.out.println();
 //
 //        bst.postOrder();
 //        System.out.println();

@@ -94,7 +94,7 @@ public class test01 {
 
         startTime = System.nanoTime();
 
-        MyHashTable<String, Integer> hash = new MyHashTable<>(131071);
+        MyHashTable<String, Integer> hash = new MyHashTable<>();
         for(String word : words1){
             if(hash.contains(word)){
                 hash.set(word,hash.get(word) + 1);
